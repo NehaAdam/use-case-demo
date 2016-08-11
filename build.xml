@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project name="userManagement" default="build">
+<project name="demoPhpApp" default="build">
     <target name="build"
             depends="prepare,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpdox,phpunit,behat,phpcb"/>
 
