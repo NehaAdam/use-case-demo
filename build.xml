@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="PhpApp" default="welcome" basedir=".">
  	<property name="message" value="Demo Project build!"/>
-	 <property name="project-name" value="${demoPhpApp}" />
+	 <property name="project-name" value="${PhpApp}" />
 	<property name="folder-to-zip" value="demoPhpApp" />
 	<property name="unzip-destination" value="unzipped" />
 
