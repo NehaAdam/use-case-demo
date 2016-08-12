@@ -15,7 +15,7 @@
 	<target name="zip">
 		<zip destfile="project-name.zip" basedir="${folder-to-zip}" excludes="database-script.*" />
 	</target>
-	<target name="unzip">
+	<target name="unzip" depends="zip">
 		<unzip src="project-name.zip" dest="${unzip-destination}" />
 	</target>
 </project> 
