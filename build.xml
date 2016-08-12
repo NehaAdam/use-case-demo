@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="zip-test" default="zip" basedir=".">
-
-	<property name="project-name" value="${demoPhpApp}" />
-	<property name="folder-to-zip" value="demoPhpApp" />
-	<property name="unzip-destination" value="unzipped" />
-
-	<target name="clean">
-		<delete file="${project-name}.zip" />
-		<delete dir="${unzip-destination}" />
-	</target>
-
-	<target name="zip">
-		<zip destfile="${project-name}.zip" basedir="${folder-to-zip}" excludes="database-script.*" />
-	</target>
-
-	<target name="unzip">
-		<unzip src="${project-name}.zip" dest="${unzip-destination}" />
-	</target>
-
-</project>
+<project name="demoPhpApp" default="welcome" basedir="." description="a demo project">
+ <property name="message" value="Demo Project build!"/>
+ <target name="welcome">
+  <echo msg="${message}"/>
+ </target>
+</project> 
