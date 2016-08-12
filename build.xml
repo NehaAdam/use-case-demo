@@ -12,10 +12,10 @@
 	 <target name="msg">
 	  <echo> "hello"</echo>
 	 </target>
-	<target name="zip">
+	<target name="zip" depends="unzip">
 		<zip destfile="project-name.zip" basedir="${folder-to-zip}" excludes="database-script.*" />
 	</target>
-	<target name="unzip" depends="zip">
+	<target name="unzip">
 		<unzip src="project-name.zip" dest="${unzip-destination}" />
 	</target>
 </project> 
