@@ -9,7 +9,7 @@
 		<delete file="${project-name}.zip" />
 		<delete dir="${unzip-destination}" />
 	</target>
-	 <target name="zip">
+	 <target name="msg">
 	  <echo> "hello"</echo>
 	 </target>
 	<target name="zip">
