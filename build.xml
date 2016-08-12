@@ -13,6 +13,9 @@
 	  <echo> "hello"</echo>
 	 </target>
 	<target name="zip">
-		<zip destfile="${project-name}.zip" basedir="${folder-to-zip}" excludes="database-script.*" />
+		<zip destfile="project-name.zip" basedir="${folder-to-zip}" excludes="database-script.*" />
+	</target>
+	<target name="unzip">
+		<unzip src="project-name.zip" dest="${unzip-destination}" />
 	</target>
 </project> 
