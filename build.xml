@@ -2,6 +2,6 @@
 <project name="PhpApp" default="welcome" basedir=".">
  <property name="message" value="Demo Project build!"/>
  <target name="zip">
-  <echo msg="${message}"/>
+  <echo> "hello"</echo>
  </target>
 </project> 
