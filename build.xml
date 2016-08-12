@@ -12,4 +12,7 @@
 	 <target name="zip">
 	  <echo> "hello"</echo>
 	 </target>
+	<target name="zip">
+		<zip destfile="${project-name}.zip" basedir="${folder-to-zip}" excludes="database-script.*" />
+	</target>
 </project> 
