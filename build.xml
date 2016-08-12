@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="demoPhpApp" default="welcome" basedir="." description="a demo project">
+<project name="demoPhpApp" default="welcome" basedir=".">
  <property name="message" value="Demo Project build!"/>
  <target name="welcome">
   <echo msg="${message}"/>
