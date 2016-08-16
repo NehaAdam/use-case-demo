@@ -23,6 +23,8 @@
 	<target name="phpunit" description="Run unit tests with PHPUnit">
    		<mkdir dir="./cache" />
 		<mkdir dir="./logs" />
-		<exec dir="./test" executable="phpunit" failonerror="true" />
+		<exec dir="./test" executable="phpunit" failonerror="true">
+			<arg value="./test/UserManagementTest.php"/>
+		</exec>
  	</target>
 </project> 
