@@ -3,7 +3,7 @@
  	<property name="message" value="Demo Project build!"/>
 	 <property name="project-name" value="${src}" />
 	<property name="folder-to-zip" value="src" />
-	<property name="base-dir" value="demoPhpApp" />
+	<property name="base-dir" value="PhpApp" />
 	<property name="unzip-destination" value="unzip" />
 
 	<target name="clean">
