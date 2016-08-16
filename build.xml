@@ -18,4 +18,10 @@
 	<target name="unzip">
 		<unzip src="project-name.zip" dest="${unzip-destination}" />
 	</target>
+
+	<target name="phpunit" description="Run unit tests with PHPUnit">
+   		<mkdir dir="${src}/cache" />
+		<mkdir dir="${src}/logs" />
+		<exec dir="${src}/test" executable="phpunit" failonerror="true" />
+ 	</target>
 </project> 
