@@ -3,7 +3,7 @@
  	<property name="message" value="Demo Project build!"/>
 	 <property name="project-name" value="${src}" />
 	<property name="folder-to-zip" value="src" />
-	<property name="basic-dir" value="src" />
+	<property name="base-dir" value="src" />
 	<property name="unzip-destination" value="unzip" />
 
 	<target name="clean">
@@ -21,8 +21,8 @@
 	</target>
 
 	<target name="phpunit" description="Run unit tests with PHPUnit">
-   		<mkdir dir="${src}/cache" />
-		<mkdir dir="${src}/logs" />
-		<exec dir="${src}/test" executable="phpunit" failonerror="true" />
+   		<mkdir dir="${base-dir}/cache" />
+		<mkdir dir="${base-dir}/logs" />
+		<exec dir="${base-dir}/test" executable="phpunit" failonerror="true" />
  	</target>
 </project> 
