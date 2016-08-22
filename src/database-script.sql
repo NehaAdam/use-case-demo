@@ -1,5 +1,5 @@
 
-CREATE DATABASE `userManPrj` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+CREATE DATABASE IF NOT EXISTS `userManPrj` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `userManPrj`;
 
 -- --------------------------------------------------------
@@ -23,10 +23,10 @@ CREATE TABLE IF NOT EXISTS `messages` (
 --
 
 CREATE TABLE IF NOT EXISTS `users` (
-  `id` varchar(200) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(200) NOT NULL,
-  `info` text varchar(200) NOT NULL,
-  `date_of_birth` varchar(200) NOT NULL,
+  `info`  varchar(200) NOT NULL,
+  `date_of_birth` date NOT NULL,
   `place_of_birth` varchar(20) NOT NULL,
   `email` varchar(200) NOT NULL,
   `password` varchar(32) NOT NULL,
